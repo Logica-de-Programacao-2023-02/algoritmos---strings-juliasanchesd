@@ -1,0 +1,22 @@
+package main
+
+import (
+	"fmt"
+	"strconv"
+)
+
+func main() {
+
+	var x string
+
+	fmt.Print("Escreva uma string: ")
+	fmt.Scan(&x)
+
+	numero, err := strconv.ParseFloat(x, 64)
+	if err != nil {
+		fmt.Printf("A string %s não é um ponto flutuante", x)
+	} else {
+		fmt.Printf("O ponto flutuante é %f", numero)
+	}
+
+}
