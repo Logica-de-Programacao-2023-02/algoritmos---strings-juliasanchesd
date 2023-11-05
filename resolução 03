@@ -1,0 +1,23 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	var x, substituir, novo string
+
+	fmt.Print("Digite uma string: ")
+	fmt.Scan(&x)
+
+	fmt.Print("Digite o caractere que deseja substituir: ")
+	fmt.Scan(&substituir)
+
+	fmt.Print("Digite o novo caractere: ")
+	fmt.Scan(&novo)
+
+	resultado := strings.ReplaceAll(x, substituir, novo)
+
+	fmt.Println("String final: ", resultado)
+}
