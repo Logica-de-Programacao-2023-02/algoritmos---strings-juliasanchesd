@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+
+	var string string
+
+	fmt.Print("Digite uma string: ")
+	fmt.Scanln(&string)
+
+	string_nova := strings.ReplaceAll(string, " ", "")
+
+	fmt.Println("Sua string sem espaços: ", string_nova)
+}
