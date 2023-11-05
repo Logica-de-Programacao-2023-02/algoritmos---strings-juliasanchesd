@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+
+	var st string
+	fmt.Print("Digite uma string: ")
+	fmt.Scan(&st)
+
+	string_maiuscula := strings.ToUpper(st)
+
+	fmt.Println("Sua string em letras maiúsculas: ", string_maiuscula)
+}
